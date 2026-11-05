@@ -1,13 +1,18 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
-
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+    Lista c=new Lista();
+    c.agregar(new Repartidor("ANA",18,10,"171858"));
+    c.agregar(new Repartidor("JUAN",18,10,"171859"));
+    c.agregar(new Repartidor("PEPE",18,10,"171850"));
+    c.agregar(new Repartidor("DARIO",18,10,"171851"));
+    c.agregar(new Repartidor("LUCIA",18,10,"171852"));
+    c.agregar(new Repartidor("TERE",18,10,"171853"));
+    c.agregar(new Repartidor("MARTA",18,10,"171854"));
+    int indice=c.buscar(10);
+    if (indice != -1) {
+        System.out.println("Se encuentra en indice: "+indice);
+    }else{
+        System.out.println("No se encuentra");
     }
 }
